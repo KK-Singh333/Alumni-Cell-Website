@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 100%;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), url(../img/pexels-pavel-danilyuk-5520322.jpg);
+    height: 95vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.navbar .logo, .navbar a{
+    color: white;
+    font-weight: 300;
+}
+.navbar{
+    position: relative;
+    border: 2px solid rgba(255, 255, 255, 0);
+}
+.navbar .logo{
+    color: #b6cfe3;
+    float: left;
+    margin-top: 2vw;
+    font-size: 2.5vw;
+}
+.navbar .navitem{
+    float: right;
+    margin-top: 1vw;
+    display: inline;
+    padding: 1vw;
+    font-size: 1.2vw;
+}
+.navbar::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.header-content{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.01vw;
+    position: absolute;
+    /* border: white solid ; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgba(0, 0, 0, 0.027),rgba(0,0,0,0.027));
+}
+.header-content h1{
+    font-weight: 400;
+}
+.header-content p{
+    font-size: 1.1vw;
+    font-weight: 300;
+}
+.navitem a{
+    text-decoration: none;
+    padding: 1.2rem;
+}
+.navbar a:hover{
+    background-color: #d2d2d21a;
+    text-decoration: underline;
+    border-radius: 1.2rem;
+    color: #fffdd0;
+}
+.header .header-content .explore{
+    margin: 3vw 1vw;
+    padding: 0.2vw 2vw;
+    border-radius: 1.9rem;
+    text-decoration: none;
+}
+.navbar img{
+    width: 7.2vw;margin-right: 1rem;margin-top: 0.3vw;
+    float: left;
+}
+p,li {
+    margin-bottom: 0.5em;
+    font-size: 1.6em;
+    
+}
+/* #######################Showcase Styling##################### */
+.showcase{
+    background-color: #ccc;
+    padding: 10rem;
+}
+.row{
+   
+    height: 350px;
+    background-color: white;
+    box-shadow: 5px 5px 20px 0px #757575;
+}
+.showcase .row1{
+    margin-bottom: 100px;
+
+}
+.row1 .imgbox,.row2 .textbox{
+    
+    float: left;
+    width: 50%;
+    height: 350px;
+}
+.row img{
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+.row .textbox{
+    padding: 50px;
+    p{
+        color: grey;
+    }
+    font-size: 0.7vw;
+}
+.row .textbox h1{
+    text-transform: uppercase;
+    font-weight: 375;
+}
+.row2 .imgbox,
+.row1 .textbox {
+   
+    float: left;
+    width: 50%;
+    height: 350px;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* ############################lower section############################# */
+.lower{
+    height: 600px;
+    box-shadow: 5px 5px 20px 0px #757575;
+}
+#lower{
+    margin-bottom: 100px;
+}
+.lower h1{
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: underline;
+    margin: 1em;
+}
+.al{
+    width: 33.3333%;
+    height: 93%;
+}
+.al img{
+    height: 50%;
+    width: 50%;
+    margin: 5px 25%;
+    padding: 1em;
+}
+.al p{
+    color: white;
+    font-weight: 200;
+    text-align: center;
+    padding: 1em;
+}
+.al1{
+    float: left;
+    background-color: #263238;
+}
+.al2{
+    float: left;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(253, 193, 104, 1) 0%, rgba(251, 128, 128, 1) 90%);
+}
+.al3{
+    float: right;
+    background-color: #263238;
+}
+.lower::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.i1{
+    color: gold;
+    font-size: 1rem;
+}
+.i2{
+    color: gold;
+    font-size: 1.5rem;
+}
+.i3{
+    color: gold;
+    font-size: 2rem;
+}
+/* #######################footer############################# */
+.footer{
+    height: 200px;
+    background-color: #263238;
+    margin-top: 0px;
+    position: relative;
+}
+.s{
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+.jack{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+/* ######################About page######################### */
+.about-header{
+    height: 160px;
+    background-color: #263238;
+}
+.about-section{
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+.about-section h1 , .mission h1 , .team h1{
+    text-transform: uppercase;
+    font-weight: 400;
+    border-bottom: 4px solid ;
+    border-color: rgb(224, 105, 50);
+    margin-bottom: 3rem;
+}
+.about-section p , .mission p{
+    padding-bottom: 1.5rem;
+}
+.para{
+    color: gray;
+}
+.about-section strong, .mission strong , .team strong{
+    font-weight: 400;
+}
+.mission , .team{
+    padding-bottom: 4rem;
+}
+/* **********************Contact**************************** */
+.contact{
+   background-color: #ccc;
+   padding-top: 50px;
+   padding-bottom: 20px;
+}
+.connect{
+    background-color: #ccc;
+}
+.contact .connect .locate{
+    background-color: white;
+}
+.locate{
+    float: left;
+    width: 49%;
+    height: 100%;
+    h1{
+        font-weight: 400;
+    }
+    p{
+        padding-left: 4.4%;
+        padding-bottom: 10px;
+        font-size: 1em;
+        color: gray;
+    }
+    
+}
+
+.connect::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.fa-solid{
+    color:rgb(224, 105, 50) ;
+    padding-right: 2px;
+}
+.info{
+    padding-left: 2px;
+    padding-bottom: 2px;
+    background-color: white;
+    float: right;
+    width: 49%;
+    .name{
+        display: block;
+        font-size: 1.3rem;
+        padding-bottom: 0.3rem;
+    }
+    #name , #email , #phone{
+        width: 95%;
+        margin-bottom: 2rem;
+    }
+    #comment{
+        width: 95%;
+        height: 300px;
+        margin-bottom: 8px;
+    }
+    .submit{
+        background-color:rgb(224, 105, 50) ;
+        padding: 0.5em 3em;
+        border: none;
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
+    h1{
+        font-weight: 400;
+        text-transform: uppercase;
+        border-bottom: solid rgb(224, 105, 50) 6px;
+    }
+    p{
+            padding-bottom: 6px;
+            font-size: 1.2em;
+            color: gray;
+    }
+}
+/* *******************Utility classes******************** */
+.container{
+    max-width: 1400px;
+    width: 95%;
+    margin: 0 auto;
+}
+.btn{
+    /* display: inline-block; */
+    /* padding: 0.5em 1.5em; */
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0em 0;
+    color: red;
+    font-size: 1vw;
+    background-color: white;
+}
+/* ##########################Query########################## */
+@media (max-width: 500px){
+    html{
+        font-size: 50%;
+    }
+    .navbar .navitem , .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .navbar .logo{
+        margin-bottom: 15px;
+        margin-left: -9%;
+    }
+    .navbar .navitem{
+        display: inline;
+    }
+    .ulist{
+        text-align: center;
+    }
+    .row{
+        height: auto;
+        width: 100%;
+    }
+    .row1{
+        margin-bottom: 10px;
+    }
+    .row .textbox{
+        padding: 0px;
+        font-size: 2vw;
+    }
+    
+    .showcase .imgbox , .showcase .textbox{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+        height: auto;
+    }
+    .lower{
+        height: auto;
+    }
+    .al{
+        float: none;
+        width: 100%;
+        text-align: center;
+        height: auto;
+    }
+
+}
